@@ -1,5 +1,6 @@
-## How To Publish React Npm Package in [npmjs.com](http://npmjs.com 'npmjs.com') with [Vite](http://vitejs.dev 'vitejs.dev') 
-## چجوری یه پکیج React.js رو توی سایت [npmjs.com](http://npmjs.com 'npmjs.com') با [Vite](http://vitejs.dev 'vitejs.dev')  منتشر کنم؟
+## How To Publish React Npm Package in [npmjs.com](http://npmjs.com 'npmjs.com') with [Vite](http://vitejs.dev 'vitejs.dev')
+
+## چجوری یه پکیج React.js رو توی سایت [npmjs.com](http://npmjs.com 'npmjs.com') با [Vite](http://vitejs.dev 'vitejs.dev') منتشر کنم؟
 
 <img src="https://user-images.githubusercontent.com/48680310/233810433-824ec36e-33c2-4ee7-84fc-c121ebd055c0.png">
 
@@ -42,6 +43,7 @@
               <li><a href="#english-config-vite">Config Vite</a></li>
               <li><a href="#english-publish">Publish To Npm</a></li>
               <li><a href="#english-update">Update Package</a></li>
+              <li><a href="#english-contact-me">Final word and Contact me</a></li>
             </ul>
           </details>
         </li>
@@ -82,6 +84,7 @@
               <li><a href="#persian-config-vite">کانفیگ Vite</a></li>
               <li><a href="#persian-publish">انتشار پکیج</a></li>
               <li><a href="#persian-update">بروز رسانی پکیج</a></li>
+              <li><a href="#persian-contact-me">سخن پایانی و ارتباط با من</a></li>
             </ul>
           </details>
           </li>
@@ -237,9 +240,20 @@ If you want to release an **update** for your package, you should :
 2. Run the **build** command to update the contents of the dist folder
 3. Run the `npm publish` command to update the new version on the npm site
 
-# <h1 id="persian-description">توضیحات فارسی <a href="#toc">&uarr;</a> </h1>
+## <h2 id="english-contact-me">Final word and Contact me <a href="#toc">&uarr;</a> </h2>
 
-## <h2 id="persian-create-project">ساختن پروژه جدید با vite<a href="#toc">&uarr;</a> </h2>
+I hope that you have made enough use of this document
+If it works for you, I would appreciate it if you could encourage me by giving a star to this repo
+If you want, you can connect with me in different social networks
+
+gmail : [dev.mohammadzolghadr@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=dev.mohammadzolghadr@gmail.com&su=Subject&body=Body) </br>
+instagram : [mozo.plus](https://instagram.com/mozo.plus) </br>
+linkedin : [mohammad-zolghadr](https://www.linkedin.com/in/mohammad-zolghadr/)</br>
+myWebsite : [mohammadzolghadr.ir](https://mohammadzolghadr.ir)
+
+# <h1 id="persian-description">توضیحات فارسی  <a href="#toc">&uarr;</a> </h1>
+
+## <h2 id="persian-create-project">ساختن پروژه جدید با vite <a href="#toc">&uarr;</a> </h2>
 
 استفاده از npm :
 
@@ -319,7 +333,7 @@ If you want to release an **update** for your package, you should :
 
 ---
 
-## <h2 id="persian-structure-of-folder">ساختار پوشه پکیج<a href="#toc">&uarr;</a> </h2>
+## <h2 id="persian-structure-of-folder">ساختار پوشه پکیج <a href="#toc">&uarr;</a> </h2>
 
 - توی پوشه src، یه پوشه جدید بساز به اسم lib. به این شکل
   `src>lib`
@@ -333,7 +347,7 @@ export { yourPackageFunction };
 
 - توی پوشه lib، بر اساس پروژه‌مون، پوشه‌های مربوط به مواردی رو که میخوایم منتشر کنیم، ایجاد می‌کنیم و دقت کن که همه اینها رو توی فایل اولیه اصلی، یعنی `src>lib>index.js` باید import و export کنیم.
 
-## <h2 id="persian-config-vite">کانفیگ کردن Vite <a href="#toc">&uarr;</a> </h2>
+## <h2 id="persian-config-vite">کانفیگ کردن  Vite <a href="#toc">&uarr;</a> </h2>
 
 - پکیج `path` رو با دستور `npm i path` یا `yarn add path` نصب کن
 
@@ -367,7 +381,7 @@ export default defineConfig({
 > 1. فقط بخش **build** رو باید اضافه کنی
 > 2. اسمی رو که توی بخش `fileName` انتخاب میکنی، باید دقیقا همون اسمی باشه که برای بخش `main` توی فایل package.json نوشتی
 
-## <h2 id="persian-publish">انتشار پکیج<a href="#toc">&uarr;</a> </h2>
+## <h2 id="persian-publish">انتشار پکیج <a href="#toc">&uarr;</a> </h2>
 
 - یه اکانت رایگان توی سایت [npmjs.com](http://npmjs.com 'npmjs.com') بساز
 - دستور **build** رو توی ترمینال پروژه‌ت بنویس
@@ -378,10 +392,21 @@ export default defineConfig({
 - دستور `npm login` رو توی ترمینال وارد کن و اطلاعات حسابت رو وارد کن که لاگین بشی
 - دستور `npm publish` رو توی ترمینال بنویس و بعد از چند ثانیه میبینی که پکیجت با موفقیت توی سایت npm منتشر شده :)
 
-## <h2 id="persian-update">بروز رسانی پکیج<a href="#toc">&uarr;</a> </h2>
+## <h2 id="persian-update">بروز رسانی پکیج <a href="#toc">&uarr;</a> </h2>
 
 اگه میخوای **نسخه جدید** از پکیجت رو منتشر کنی، باید :
 
 1. ورژن پکیجت رو توی فایل **package.json** تغییر بدی
 2. دستور **build** رو بزن که محتویات پوشه dist بر اساس آخرین تغییراتی که دادی، بروز بشن
 3. دستور `npm publish` رو بزن تا ورژن جدید پکیجت، توی سایت npm، آپلود شه
+
+## <h2 id="persian-contact-me">سخن نهایی و ارتباط با من <a href="#toc">&uarr;</a> </h2>
+
+امیدوارم که از این داکیومنت، استفاده کافی رو برده باشی
+اگه به دردت خورد، ممنون میشم که با ستاره دادن به این پروژه، باعث دلگرمی من بشی
+اگه بخوای، میتونی باهام توی شبکه های اجتماعی مختلف در ارتباط باشی
+
+gmail : [dev.mohammadzolghadr@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=dev.mohammadzolghadr@gmail.com&su=Subject&body=Body) </br>
+instagram : [mozo.plus](https://instagram.com/mozo.plus) </br>
+linkedin : [mohammad-zolghadr](https://www.linkedin.com/in/mohammad-zolghadr/)</br>
+myWebsite : [mohammadzolghadr.ir](https://mohammadzolghadr.ir)
